@@ -1,0 +1,72 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            6
+        ],
+        "clusterVersion": "1.244.149.20220705-111633"
+    },
+    "id": "380ea9c2-8c38-457a-b530-8f28558a7a1a",
+    "dashboardMetadata": {
+        "name": "1000 🛖 [itcare.qa] Home",
+        "shared": false,
+        "owner": "pre_ttheol@emea.cegedim.grp",
+        "dashboardFilter": null,
+        "tags": [
+            "[cgdm]Cegedim Corp"
+        ],
+        "tilesNameSize": null
+    },
+    "tiles": [
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 456,
+                "width": 874,
+                "height": 608
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "## Useful Dashboards, links, ...\n---\n\n- [Summary Overview](#dashboard;gtf=-2h;gf=all;id=TO_UPDATE): Provide summary overview on My Application\n\n- [Top DB Queries](ui/technologies/CUSTOM_DEVICE/616D0F9D7A438246/topn-table?gtf=-2h&gf=all): Provide access to Top DB queries on My Applications\n\n- [Application modules usage](#dashboard;gtf=-2h;gf=all;id=TO_UPDATE): Provide information on My Application module usage\n\n- [Technical dashboard](#dashboard;gtf=-2h;gf=all;id=TO_UPDATE): Provide access to specific Technical  counter on My Application\n\n- [Lifecheck](#dashboard;gtf=-2h;gf=all;id=TO_UPDATE): Provide summary links to My Application lifecheck"
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 456,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "### [🧭 Main Environment Overview](#dashboard;gtf=-2h;gf=all;id=5759f382-efe6-4866-a1bd-e5705463f791)"
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 0,
+                "width": 456,
+                "height": 608
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "## Information\n---\n\n### 🔗 Dependencies/Impacts\n- My Application 02, My Application 03\n\n### 📄 Documentations\n\n\n- [Product Contacts](\nhttps://confluencechs.cegedim.com/pages/viewpage.action?pageId=217294731)\n\n- [Product Documentation](\nhttps://confluencechs.cegedim.com/pages/viewpage.action?pageId=242102157)"
+        }
+    ]
+}

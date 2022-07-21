@@ -1,0 +1,90 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            6
+        ],
+        "clusterVersion": "1.244.149.20220705-111633"
+    },
+    "id": "313def7d-fc4a-4b18-ac9d-bc19ac1937c4",
+    "dashboardMetadata": {
+        "name": "00📝 Dashboard Documentation",
+        "shared": true,
+        "owner": "Cegedim Corp",
+        "dashboardFilter": null,
+        "tags": [
+            "Cegedim Corp"
+        ],
+        "preset": true,
+        "tilesNameSize": null
+    },
+    "tiles": [
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 1292,
+                "height": 114
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "## This page describe and documents Best Practices to define and configure your Dynatrace Dashboards:\n\n- Dashboard with tag **[cgdm]Cegedim Corp - BU** should be modified/adapted according monitored applications, but follow proposal template presentation\n\n- Dashboard with tag **[cgdm]Cegedim Corp** should not be modified, these Dashboards are maintained by **Cegedim Dynatrace Corp team**\n\n\n\n"
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 380,
+                "left": 0,
+                "width": 1292,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "## Rules for your Dashboards:\n\n- Number your Dashboard starting to 1000 and increment by 100 to group and order dashboard for same context"
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 152,
+                "left": 0,
+                "width": 646,
+                "height": 228
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "### List of **[cgdm]Cegedim Corp - BU** dasboard:\n- 01 🧭 Main Environment Overview: Provide an overview split by application\n\nTo update this Dashboard:\n1. Duplicate the **3 tiles** (Markdown , Problems, Service health)\n2. Update tile **Markdow** content: Management zone name and link\n3. Update tile **Problems**: Custom management zone\n4. Update tile **Service health**: Custom management zone"
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 152,
+                "left": 646,
+                "width": 646,
+                "height": 228
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "### List of **[cgdm]Cegedim Corp** dasboard:\n- 02 🏠 Application Overview\n- 03 ✔ User experience (web applications)\n- 04 ✔ Services\n- 05 ✔ Infrastructure\n- 06 ✔ Database services\n- 07 ✔ Synthetic (browser)\n- 08 ✔ Synthetic (service)\n- 09 ✔ User experience (mobile apps)"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            6
+        ],
+        "clusterVersion": "1.244.149.20220705-111633"
+    },
+    "id": "7c9e2b48-ffea-404d-aba8-331cf129893d",
+    "dashboardMetadata": {
+        "name": "9999 🛖 [unmonitored] Home",
+        "shared": true,
+        "owner": "Cegedim Corp",
+        "dashboardFilter": null,
+        "tags": [
+            "[cgdm]Cegedim Corp"
+        ],
+        "preset": true,
+        "tilesNameSize": null
+    },
+    "tiles": [
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 456,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "### [🧭 Main Environment Overview](#dashboard;gtf=-2h;gf=all;id=5759f382-efe6-4866-a1bd-e5705463f791)"
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 0,
+                "width": 988,
+                "height": 608
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "## Information\n---\n\n\n### 📄 Documentations\n\nUnmonirored section provide and group 2 types of Dynatrace service components:\n1. Requests to public networks\n2. Requests to unmonitored hosts"
+        }
+    ]
+}
