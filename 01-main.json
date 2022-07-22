@@ -36,8 +36,8 @@
             "tileFilter": {
                 "timeframe": null,
                 "managementZone": {
-                    "id": "2314070087086307373",
-                    "name": "itcare [qa]"
+                    "id": "${mz.id}",
+                    "name": "${mz.name}"
                 }
             },
             "problemSelector": null,
@@ -57,8 +57,8 @@
             "tileFilter": {
                 "timeframe": null,
                 "managementZone": {
-                    "id": "2314070087086307373",
-                    "name": "itcare [qa]"
+                    "id": "${mz.id}",
+                    "name": "${mz.name}"
                 }
             },
             "filterConfig": null,
@@ -232,7 +232,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "#### [🏠 App. Overview](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0000-000000000001)"
+            "markdown": "#### [🏠 App. Overview](#dashboard;gtf=-2h;gf=${mz.id};id=bbbbbbbb-a007-a017-0000-000000000001)"
         },
         {
             "name": "Markdown",
@@ -249,7 +249,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "#### [🛖 itcare [qa]](#dashboard;gtf=-2h;gf=all;id=380ea9c2-8c38-457a-b530-8f28558a7a1a)"
+            "markdown": "#### [🛖 ${mz.name}](#dashboard;gtf=-2h;gf=${mz.id};id=380ea9c2-8c38-457a-b530-8f28558a7a1a)"
         },
         {
             "name": "Problems",
@@ -308,7 +308,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "#### [🏠 App. Overview](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0000-000000000001)"
+            "markdown": "#### [🏠 App. Overview](#dashboard;gtf=-2h;gf=${unmonitoredmz.id};id=bbbbbbbb-a007-a017-0000-000000000001)"
         },
         {
             "name": "Markdown",
@@ -325,7 +325,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "#### [🛖 unmonitored](#dashboard;gtf=-2h;gf=all;id=7c9e2b48-ffea-404d-aba8-331cf129893d)"
+            "markdown": "#### [🛖 unmonitored](#dashboard;gtf=-2h;gf=${unmonitoredmz.id};id=7c9e2b48-ffea-404d-aba8-331cf129893d)"
         }
     ]
 }
