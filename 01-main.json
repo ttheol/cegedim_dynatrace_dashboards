@@ -265,8 +265,8 @@
             "tileFilter": {
                 "timeframe": null,
                 "managementZone": {
-                    "id": "5243150922802676208",
-                    "name": "_unmonitored services"
+                    "id": "${unmonitoredmz.id}",
+                    "name": "${unmonitoredmz.name}"
                 }
             },
             "problemSelector": null,
@@ -286,8 +286,8 @@
             "tileFilter": {
                 "timeframe": null,
                 "managementZone": {
-                    "id": "5243150922802676208",
-                    "name": "_unmonitored services"
+                    "id": "${unmonitoredmz.id}",
+                    "name": "${unmonitoredmz.name}"
                 }
             },
             "filterConfig": null,
