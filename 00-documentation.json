@@ -67,7 +67,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "### List of **[cgdm]Cegedim Corp - BU** dasboard:\n- 01 🧭 Main Environment Overview: Provide an overview split by application\n\nTo update this Dashboard:\n1. Duplicate the **3 tiles** (Markdown , Problems, Service health)\n2. Update tile **Markdow** content: Management zone name and link\n3. Update tile **Problems**: Custom management zone\n4. Update tile **Service health**: Custom management zone"
+            "markdown": "### List of **[cgdm]Cegedim Corp - BU** dasboard:\n- 01 🧭 [Main Environment Overview](#dashboard;gtf=-2h;gf=all;id=5759f382-efe6-4866-a1bd-e5705463f791): Provide an overview split by application\n\nTo update this Dashboard:\n1. Duplicate the **3 tiles** (Markdown , Problems, Service health)\n2. Update tile **Markdow** content: Management zone name and link\n3. Update tile **Problems**: Custom management zone\n4. Update tile **Service health**: Custom management zone"
         },
         {
             "name": "Markdown",
