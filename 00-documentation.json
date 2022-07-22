@@ -5,7 +5,7 @@
         ],
         "clusterVersion": "1.244.149.20220705-111633"
     },
-    "id": "313def7d-fc4a-4b18-ac9d-bc19ac1937c4",
+    "id": "bbbbbbbb-a007-a017-0000-000000000001",
     "dashboardMetadata": {
         "name": "00📝 Dashboard Documentation",
         "shared": true,
@@ -67,7 +67,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "### List of **[cgdm]Cegedim Corp - BU** dasboard:\n- 01 🧭 [Main Environment Overview](#dashboard;gtf=-2h;gf=all;id=5759f382-efe6-4866-a1bd-e5705463f791): Provide an overview split by application\n\nTo update this Dashboard:\n1. Duplicate the **3 tiles** (Markdown , Problems, Service health)\n2. Update tile **Markdow** content: Management zone name and link\n3. Update tile **Problems**: Custom management zone\n4. Update tile **Service health**: Custom management zone"
+            "markdown": "### List of **[cgdm]Cegedim Corp - BU** dasboard:\n- 01 🧭 [Main Environment Overview](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0001-000000000001): Provide an overview split by application\n\nTo update this Dashboard:\n1. Duplicate the **3 tiles** (Markdown , Problems, Service health)\n2. Update tile **Markdow** content: Management zone name and link\n3. Update tile **Problems**: Custom management zone\n4. Update tile **Service health**: Custom management zone"
         },
         {
             "name": "Markdown",
@@ -84,7 +84,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "### List of **[cgdm]Cegedim Corp** dasboard:\n- 02 🏠 Application Overview\n- 03 ✔ User experience (web applications)\n- 04 ✔ Services\n- 05 ✔ Infrastructure\n- 06 ✔ Database services\n- 07 ✔ Synthetic (browser)\n- 08 ✔ Synthetic (service)\n- 09 ✔ User experience (mobile apps)"
+            "markdown": "### List of **[cgdm]Cegedim Corp** dasboard:\n- 02 🏠 [Application Overview](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0002-000000000001)\n- 03 ✔ [User experience (web applications)](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0003-000000000001)\n- 04 ✔ [Services](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0004-000000000001)\n- 05 ✔ [Infrastructure](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0005-000000000001)\n- 06 ✔ [Database services](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0006-000000000001)\n- 07 ✔ [Synthetic (browser)](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0007-000000000001)\n- 08 ✔ [Synthetic (service)](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0008-000000000001)\n- 09 ✔ [User experience (mobile apps)](#dashboard;gtf=-2h;gf=all;id=bbbbbbbb-a007-a017-0009-000000000001)"
         }
     ]
 }
