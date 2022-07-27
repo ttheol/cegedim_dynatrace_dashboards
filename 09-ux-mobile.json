@@ -864,7 +864,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -948,7 +949,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:apps.other.uaDuration.osAndVersion:splitBy(\"dt.entity.device_application\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "New users (by os)",
@@ -978,7 +982,8 @@
                     "limit": null,
                     "metricSelector": "builtin:apps.other.newUsers.os:splitBy(\"dt.entity.os\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1052,7 +1057,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:apps.other.newUsers.os:splitBy(\"dt.entity.os\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Action count by version",
@@ -1082,7 +1090,8 @@
                     "limit": null,
                     "metricSelector": "builtin:apps.other.uaCount.osAndVersion:splitBy(\"App Version\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1156,7 +1165,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:apps.other.uaCount.osAndVersion:splitBy(\"App Version\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Request Errors",
@@ -1186,7 +1198,8 @@
                     "limit": null,
                     "metricSelector": "builtin:apps.other.requestErrorCount.osAndProvider:splitBy(Provider):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1260,7 +1273,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:apps.other.requestErrorCount.osAndProvider:splitBy(Provider):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Requests errors",
@@ -1290,7 +1306,8 @@
                     "limit": null,
                     "metricSelector": "builtin:apps.other.requestErrorCount.osAndProvider:splitBy(Provider):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1374,7 +1391,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:apps.other.requestErrorCount.osAndProvider:splitBy(Provider):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Requests response times",
@@ -1415,7 +1435,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1489,7 +1510,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:apps.other.requestTimes.osAndProvider:splitBy(Provider):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": " ",
@@ -1519,7 +1543,8 @@
                     "limit": null,
                     "metricSelector": "builtin:apps.other.apdex.osAndVersion:splitBy(\"dt.entity.device_application\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1593,7 +1618,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:apps.other.apdex.osAndVersion:splitBy(\"dt.entity.device_application\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": " ",
@@ -1623,7 +1651,8 @@
                     "limit": null,
                     "metricSelector": "builtin:apps.other.apdex.osAndVersion:splitBy(\"dt.entity.device_application\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1707,7 +1736,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:apps.other.apdex.osAndVersion:splitBy(\"dt.entity.device_application\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Crash count (by os and app version)",
@@ -1737,7 +1769,8 @@
                     "limit": null,
                     "metricSelector": "builtin:apps.other.crashCount.osAndVersion:splitBy(\"dt.entity.os\",Version):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1811,7 +1844,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:apps.other.crashCount.osAndVersion:splitBy(\"dt.entity.os\",Version):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": " ",
@@ -1841,7 +1877,8 @@
                     "limit": null,
                     "metricSelector": "builtin:apps.other.crashCount.osAndVersion:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1925,7 +1962,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:apps.other.crashCount.osAndVersion:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "User Sessions Query",
@@ -1997,7 +2037,8 @@
                     "limit": null,
                     "metricSelector": "builtin:apps.other.uaCount.geoAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2085,7 +2126,10 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=null&(builtin:apps.other.uaCount.geoAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "ApdexCategory",
@@ -2115,7 +2159,8 @@
                     "limit": null,
                     "metricSelector": "builtin:apps.other.uaCount.geoAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2191,7 +2236,10 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=Inf&(builtin:apps.other.uaCount.geoAndApdex:splitBy(\"Apdex category\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         }
     ]
 }

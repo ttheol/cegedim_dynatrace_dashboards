@@ -688,7 +688,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -763,7 +764,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "TOP1 - memory used %",
@@ -804,7 +809,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -879,7 +885,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "TOP1 - Page faults per second",
@@ -920,7 +930,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -995,7 +1006,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.mem.avail.pfps:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:host.mem.avail.pfps:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "TOP1 - Disk used %",
@@ -1036,7 +1051,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1111,7 +1127,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.disk.usedPct:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:host.disk.usedPct:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "DNS query time",
@@ -1153,7 +1173,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1228,7 +1249,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.dns.queryTime:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:host.dns.queryTime:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "CPU usage by host",
@@ -1269,7 +1294,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1343,7 +1369,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Memory usage by container",
@@ -1384,7 +1413,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1458,7 +1488,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:containers.memory.usagePercent:splitBy(\"dt.entity.container_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "CPU usage by container",
@@ -1499,7 +1532,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1573,7 +1607,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:containers.cpu_usage2:splitBy(\"dt.entity.docker_container_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "CPU usage by host",
@@ -1581,10 +1618,10 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 570,
+                "top": 722,
                 "left": 608,
                 "width": 380,
-                "height": 304
+                "height": 152
             },
             "tileFilter": {
                 "timeframe": null,
@@ -1614,7 +1651,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1689,7 +1727,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:host.cpu.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "Traffic in/out",
@@ -1728,7 +1770,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 },
                 {
                     "id": "B",
@@ -1750,7 +1793,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1846,7 +1890,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:host.net.nic.trafficIn:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names,(builtin:host.net.nic.trafficOut:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Memory usage by host",
@@ -1887,7 +1934,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1961,7 +2009,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.mem.usage:splitBy(\"dt.entity.host\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Memory usage by host",
@@ -1969,10 +2020,10 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 950,
+                "top": 1102,
                 "left": 608,
                 "width": 380,
-                "height": 304
+                "height": 152
             },
             "tileFilter": {
                 "timeframe": null,
@@ -2002,7 +2053,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2077,7 +2129,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:host.mem.usage:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "Process memory usage",
@@ -2118,7 +2174,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2192,7 +2249,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:tech.generic.mem.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Process memory usage",
@@ -2233,7 +2293,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2317,7 +2378,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:tech.generic.mem.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Disk throughput write",
@@ -2359,7 +2423,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2433,7 +2498,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.disk.throughput.write:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Disk capacity by host",
@@ -2475,7 +2543,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2549,7 +2618,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.disk.usedPct:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Disk throughput read",
@@ -2591,7 +2663,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2665,7 +2738,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.disk.throughput.read:splitBy(\"dt.entity.host\",\"dt.entity.disk\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Process CPU usage",
@@ -2706,7 +2782,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2780,7 +2857,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:tech.generic.cpu.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Process CPU usage",
@@ -2821,7 +2901,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2905,7 +2986,672 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:tech.generic.cpu.usage:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
+        },
+        {
+            "name": "Unavailability host",
+            "nameSize": null,
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 1634,
+                "left": 0,
+                "width": 304,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 1672,
+                "left": 0,
+                "width": 988,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "- - - "
+        },
+        {
+            "name": "Unavailability rate",
+            "nameSize": null,
+            "tileType": "DATA_EXPLORER",
+            "configured": true,
+            "bounds": {
+                "top": 1710,
+                "left": 0,
+                "width": 988,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "customName": "Disk throughput write",
+            "queries": [
+                {
+                    "id": "A",
+                    "metric": null,
+                    "spaceAggregation": null,
+                    "timeAggregation": "DEFAULT",
+                    "splitBy": [],
+                    "sortBy": null,
+                    "filterBy": null,
+                    "limit": null,
+                    "metricSelector": "(100 - builtin:host.availability:splitBy(\"dt.entity.host\")):sort(value(auto,ascending)):limit(10)",
+                    "foldTransformation": null,
+                    "enabled": true,
+                    "generatedMetricSelector": null
+                }
+            ],
+            "visualConfig": {
+                "type": "HEATMAP",
+                "global": {
+                    "theme": null,
+                    "threshold": null,
+                    "seriesType": null,
+                    "hasTrendline": null,
+                    "hideLegend": false
+                },
+                "rules": [
+                    {
+                        "matcher": "A:",
+                        "unitTransform": "auto",
+                        "valueFormat": "auto",
+                        "properties": {
+                            "color": "RED",
+                            "seriesType": "LINE",
+                            "alias": null
+                        },
+                        "seriesOverrides": []
+                    }
+                ],
+                "axes": {
+                    "xAxis": {
+                        "displayName": null,
+                        "visible": true
+                    },
+                    "yAxes": []
+                },
+                "heatmapSettings": {
+                    "yAxis": "DIMENSIONS",
+                    "yAxisBuckets": null,
+                    "xAxisBuckets": null
+                },
+                "singleValueSettings": null,
+                "thresholds": [
+                    {
+                        "axisTarget": "LEFT",
+                        "columnId": null,
+                        "rules": [
+                            {
+                                "value": null,
+                                "color": "#7dc540"
+                            },
+                            {
+                                "value": null,
+                                "color": "#f5d30f"
+                            },
+                            {
+                                "value": null,
+                                "color": "#dc172a"
+                            }
+                        ],
+                        "queryId": "",
+                        "visible": true
+                    }
+                ],
+                "tableSettings": {
+                    "isThresholdBackgroundAppliedToCell": false
+                },
+                "graphChartSettings": {
+                    "connectNulls": false
+                },
+                "honeycombSettings": {
+                    "showHive": true,
+                    "showLegend": true,
+                    "showLabels": false
+                }
+            },
+            "queriesSettings": {
+                "resolution": "",
+                "foldTransformation": null,
+                "foldAggregation": null
+            },
+            "metricExpressions": [
+                "resolution=null&((100 - builtin:host.availability:splitBy(\"dt.entity.host\")):sort(value(auto,ascending)):limit(10)):limit(100):names"
+            ]
+        },
+        {
+            "name": "Resources available (host)",
+            "nameSize": null,
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 1634,
+                "left": 1026,
+                "width": 418,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 1672,
+                "left": 1026,
+                "width": 988,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "- - - "
+        },
+        {
+            "name": "Memory resource",
+            "nameSize": null,
+            "tileType": "DATA_EXPLORER",
+            "configured": true,
+            "bounds": {
+                "top": 1710,
+                "left": 1520,
+                "width": 494,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "customName": "Data explorer results",
+            "queries": [
+                {
+                    "id": "A",
+                    "metric": null,
+                    "spaceAggregation": null,
+                    "timeAggregation": "DEFAULT",
+                    "splitBy": [],
+                    "sortBy": null,
+                    "filterBy": null,
+                    "limit": null,
+                    "metricSelector": "builtin:host.mem.avail.pct:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()",
+                    "foldTransformation": null,
+                    "enabled": true,
+                    "generatedMetricSelector": null
+                }
+            ],
+            "visualConfig": {
+                "type": "GRAPH_CHART",
+                "global": {
+                    "theme": null,
+                    "threshold": null,
+                    "seriesType": null,
+                    "hasTrendline": null,
+                    "hideLegend": false
+                },
+                "rules": [
+                    {
+                        "matcher": "A:",
+                        "unitTransform": null,
+                        "valueFormat": null,
+                        "properties": {
+                            "color": "DEFAULT",
+                            "seriesType": null,
+                            "alias": null
+                        },
+                        "seriesOverrides": []
+                    }
+                ],
+                "axes": {
+                    "xAxis": {
+                        "displayName": "",
+                        "visible": true
+                    },
+                    "yAxes": [
+                        {
+                            "displayName": null,
+                            "visible": true,
+                            "min": "1",
+                            "max": "100",
+                            "position": "LEFT",
+                            "queryIds": [
+                                "A"
+                            ],
+                            "defaultAxis": true
+                        }
+                    ]
+                },
+                "heatmapSettings": {
+                    "yAxis": "VALUE",
+                    "yAxisBuckets": null,
+                    "xAxisBuckets": null
+                },
+                "singleValueSettings": null,
+                "thresholds": [
+                    {
+                        "axisTarget": "LEFT",
+                        "columnId": null,
+                        "rules": [
+                            {
+                                "value": 20,
+                                "color": "#7dc540"
+                            },
+                            {
+                                "value": 10,
+                                "color": "#f5d30f"
+                            },
+                            {
+                                "value": 0,
+                                "color": "#dc172a"
+                            }
+                        ],
+                        "queryId": "",
+                        "visible": true
+                    }
+                ],
+                "tableSettings": {
+                    "isThresholdBackgroundAppliedToCell": false
+                },
+                "graphChartSettings": {
+                    "connectNulls": false
+                },
+                "honeycombSettings": {
+                    "showHive": true,
+                    "showLegend": true,
+                    "showLabels": false
+                }
+            },
+            "queriesSettings": {
+                "resolution": "",
+                "foldTransformation": null,
+                "foldAggregation": null
+            },
+            "metricExpressions": [
+                "resolution=null&(builtin:host.mem.avail.pct:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()):limit(100):names"
+            ]
+        },
+        {
+            "name": "CPU available ",
+            "nameSize": null,
+            "tileType": "DATA_EXPLORER",
+            "configured": true,
+            "bounds": {
+                "top": 1710,
+                "left": 1026,
+                "width": 494,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "customName": "Data explorer results",
+            "queries": [
+                {
+                    "id": "A",
+                    "metric": null,
+                    "spaceAggregation": null,
+                    "timeAggregation": "DEFAULT",
+                    "splitBy": [],
+                    "sortBy": null,
+                    "filterBy": null,
+                    "limit": null,
+                    "metricSelector": "builtin:host.cpu.idle:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()",
+                    "foldTransformation": null,
+                    "enabled": true,
+                    "generatedMetricSelector": null
+                }
+            ],
+            "visualConfig": {
+                "type": "GRAPH_CHART",
+                "global": {
+                    "theme": null,
+                    "threshold": null,
+                    "seriesType": null,
+                    "hasTrendline": null,
+                    "hideLegend": false
+                },
+                "rules": [
+                    {
+                        "matcher": "A:",
+                        "unitTransform": null,
+                        "valueFormat": null,
+                        "properties": {
+                            "color": "DEFAULT",
+                            "seriesType": null,
+                            "alias": null
+                        },
+                        "seriesOverrides": []
+                    }
+                ],
+                "axes": {
+                    "xAxis": {
+                        "displayName": "",
+                        "visible": true
+                    },
+                    "yAxes": [
+                        {
+                            "displayName": null,
+                            "visible": true,
+                            "min": "1",
+                            "max": "100",
+                            "position": "LEFT",
+                            "queryIds": [
+                                "A"
+                            ],
+                            "defaultAxis": true
+                        }
+                    ]
+                },
+                "heatmapSettings": {
+                    "yAxis": "VALUE",
+                    "yAxisBuckets": null,
+                    "xAxisBuckets": null
+                },
+                "singleValueSettings": null,
+                "thresholds": [
+                    {
+                        "axisTarget": "LEFT",
+                        "columnId": null,
+                        "rules": [
+                            {
+                                "value": 20,
+                                "color": "#7dc540"
+                            },
+                            {
+                                "value": 10,
+                                "color": "#f5d30f"
+                            },
+                            {
+                                "value": 0,
+                                "color": "#dc172a"
+                            }
+                        ],
+                        "queryId": "",
+                        "visible": true
+                    }
+                ],
+                "tableSettings": {
+                    "isThresholdBackgroundAppliedToCell": false
+                },
+                "graphChartSettings": {
+                    "connectNulls": false
+                },
+                "honeycombSettings": {
+                    "showHive": true,
+                    "showLegend": true,
+                    "showLabels": false
+                }
+            },
+            "queriesSettings": {
+                "resolution": "",
+                "foldTransformation": null,
+                "foldAggregation": null
+            },
+            "metricExpressions": [
+                "resolution=null&(builtin:host.cpu.idle:filter(in(\"dt.entity.host\",entitySelector(\"type(HOST)\"))):splitBy()):limit(100):names"
+            ]
+        },
+        {
+            "name": "CPU idle % - (red<10% & green>20%)",
+            "nameSize": null,
+            "tileType": "DATA_EXPLORER",
+            "configured": true,
+            "bounds": {
+                "top": 570,
+                "left": 608,
+                "width": 380,
+                "height": 152
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "customName": "CPU usage %",
+            "queries": [
+                {
+                    "id": "A",
+                    "metric": "builtin:host.cpu.idle",
+                    "spaceAggregation": null,
+                    "timeAggregation": "DEFAULT",
+                    "splitBy": [
+                        "dt.entity.host"
+                    ],
+                    "sortBy": "ASC",
+                    "filterBy": {
+                        "filter": null,
+                        "globalEntity": null,
+                        "filterType": null,
+                        "filterOperator": null,
+                        "entityAttribute": null,
+                        "relationship": null,
+                        "nestedFilters": [],
+                        "criteria": []
+                    },
+                    "limit": 20,
+                    "metricSelector": null,
+                    "foldTransformation": null,
+                    "enabled": true,
+                    "generatedMetricSelector": null
+                }
+            ],
+            "visualConfig": {
+                "type": "HONEYCOMB",
+                "global": {
+                    "theme": null,
+                    "threshold": null,
+                    "seriesType": null,
+                    "hasTrendline": null,
+                    "hideLegend": false
+                },
+                "rules": [
+                    {
+                        "matcher": "A:",
+                        "unitTransform": null,
+                        "valueFormat": null,
+                        "properties": {
+                            "color": "DEFAULT",
+                            "seriesType": null,
+                            "alias": null
+                        },
+                        "seriesOverrides": []
+                    }
+                ],
+                "axes": {
+                    "xAxis": {
+                        "displayName": null,
+                        "visible": true
+                    },
+                    "yAxes": []
+                },
+                "heatmapSettings": {
+                    "yAxis": "VALUE",
+                    "yAxisBuckets": null,
+                    "xAxisBuckets": null
+                },
+                "singleValueSettings": null,
+                "thresholds": [
+                    {
+                        "axisTarget": "LEFT",
+                        "columnId": null,
+                        "rules": [
+                            {
+                                "value": 20,
+                                "color": "#7dc540"
+                            },
+                            {
+                                "value": 10,
+                                "color": "#f5d30f"
+                            },
+                            {
+                                "value": 0,
+                                "color": "#dc172a"
+                            }
+                        ],
+                        "queryId": "",
+                        "visible": true
+                    }
+                ],
+                "tableSettings": {
+                    "isThresholdBackgroundAppliedToCell": false
+                },
+                "graphChartSettings": {
+                    "connectNulls": false
+                },
+                "honeycombSettings": {
+                    "showHive": true,
+                    "showLegend": false,
+                    "showLabels": false
+                }
+            },
+            "queriesSettings": {
+                "resolution": "",
+                "foldTransformation": null,
+                "foldAggregation": null
+            },
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.cpu.idle:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):limit(20)):limit(100):names"
+            ]
+        },
+        {
+            "name": "Memory available % - (red<10% & green>20%)",
+            "nameSize": null,
+            "tileType": "DATA_EXPLORER",
+            "configured": true,
+            "bounds": {
+                "top": 950,
+                "left": 608,
+                "width": 380,
+                "height": 152
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "customName": "CPU usage %",
+            "queries": [
+                {
+                    "id": "A",
+                    "metric": "builtin:host.mem.avail.pct",
+                    "spaceAggregation": null,
+                    "timeAggregation": "DEFAULT",
+                    "splitBy": [
+                        "dt.entity.host"
+                    ],
+                    "sortBy": "DESC",
+                    "filterBy": {
+                        "filter": null,
+                        "globalEntity": null,
+                        "filterType": null,
+                        "filterOperator": null,
+                        "entityAttribute": null,
+                        "relationship": null,
+                        "nestedFilters": [],
+                        "criteria": []
+                    },
+                    "limit": 20,
+                    "metricSelector": null,
+                    "foldTransformation": null,
+                    "enabled": true,
+                    "generatedMetricSelector": null
+                }
+            ],
+            "visualConfig": {
+                "type": "HONEYCOMB",
+                "global": {
+                    "theme": null,
+                    "threshold": null,
+                    "seriesType": null,
+                    "hasTrendline": null,
+                    "hideLegend": false
+                },
+                "rules": [
+                    {
+                        "matcher": "A:",
+                        "unitTransform": null,
+                        "valueFormat": null,
+                        "properties": {
+                            "color": "DEFAULT",
+                            "seriesType": null,
+                            "alias": null
+                        },
+                        "seriesOverrides": []
+                    }
+                ],
+                "axes": {
+                    "xAxis": {
+                        "displayName": null,
+                        "visible": true
+                    },
+                    "yAxes": []
+                },
+                "heatmapSettings": {
+                    "yAxis": "VALUE",
+                    "yAxisBuckets": null,
+                    "xAxisBuckets": null
+                },
+                "singleValueSettings": null,
+                "thresholds": [
+                    {
+                        "axisTarget": "LEFT",
+                        "columnId": null,
+                        "rules": [
+                            {
+                                "value": 20,
+                                "color": "#7dc540"
+                            },
+                            {
+                                "value": 10,
+                                "color": "#f5d30f"
+                            },
+                            {
+                                "value": 0,
+                                "color": "#dc172a"
+                            }
+                        ],
+                        "queryId": "",
+                        "visible": true
+                    }
+                ],
+                "tableSettings": {
+                    "isThresholdBackgroundAppliedToCell": false
+                },
+                "graphChartSettings": {
+                    "connectNulls": false
+                },
+                "honeycombSettings": {
+                    "showHive": true,
+                    "showLegend": false,
+                    "showLabels": false
+                }
+            },
+            "queriesSettings": {
+                "resolution": "",
+                "foldTransformation": null,
+                "foldAggregation": null
+            },
+            "metricExpressions": [
+                "resolution=Inf&(builtin:host.mem.avail.pct:splitBy(\"dt.entity.host\"):sort(value(auto,descending)):limit(20)):limit(100):names"
+            ]
         }
     ]
 }

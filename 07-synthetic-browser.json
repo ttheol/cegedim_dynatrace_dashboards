@@ -296,7 +296,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 1254,
+                "top": 1634,
                 "left": 1026,
                 "width": 494,
                 "height": 38
@@ -312,7 +312,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 1292,
+                "top": 1672,
                 "left": 1026,
                 "width": 988,
                 "height": 38
@@ -329,7 +329,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 1292,
+                "top": 1672,
                 "left": 0,
                 "width": 988,
                 "height": 38
@@ -346,7 +346,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 1254,
+                "top": 1634,
                 "left": 0,
                 "width": 494,
                 "height": 38
@@ -429,7 +429,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 874,
+                "top": 1254,
                 "left": 1026,
                 "width": 494,
                 "height": 38
@@ -445,7 +445,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 912,
+                "top": 1292,
                 "left": 1026,
                 "width": 988,
                 "height": 38
@@ -462,7 +462,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 874,
+                "top": 1254,
                 "left": 0,
                 "width": 494,
                 "height": 38
@@ -478,7 +478,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 912,
+                "top": 1292,
                 "left": 0,
                 "width": 988,
                 "height": 38
@@ -644,7 +644,7 @@
             "tileType": "DTAQL",
             "configured": true,
             "bounds": {
-                "top": 1330,
+                "top": 1710,
                 "left": 1026,
                 "width": 988,
                 "height": 304
@@ -730,7 +730,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -805,7 +806,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "Browser monitor",
@@ -835,7 +840,8 @@
                     "limit": null,
                     "metricSelector": "builtin:billing.synthetic.actions:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -910,7 +916,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:billing.synthetic.actions:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:billing.synthetic.actions:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+            ]
         },
         {
             "name": " ",
@@ -951,7 +961,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1025,7 +1036,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.synthetic_test\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": " ",
@@ -1066,7 +1080,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1150,7 +1165,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.synthetic_test\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": " ",
@@ -1191,7 +1209,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1265,7 +1284,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.geolocation\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": " ",
@@ -1306,7 +1328,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1390,7 +1413,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:synthetic.browser.availability.location.totalWoMaintenanceWindow:splitBy(\"dt.entity.geolocation\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Failed tests",
@@ -1398,7 +1424,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 950,
+                "top": 1330,
                 "left": 0,
                 "width": 342,
                 "height": 304
@@ -1420,7 +1446,8 @@
                     "limit": null,
                     "metricSelector": "builtin:synthetic.browser.event.failure.geo:splitBy(\"dt.entity.synthetic_test_step\",\"dt.entity.geolocation\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1494,7 +1521,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:synthetic.browser.event.failure.geo:splitBy(\"dt.entity.synthetic_test_step\",\"dt.entity.geolocation\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Tests : Successful / Failed",
@@ -1502,7 +1532,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 950,
+                "top": 1330,
                 "left": 342,
                 "width": 646,
                 "height": 304
@@ -1524,7 +1554,8 @@
                     "limit": null,
                     "metricSelector": "builtin:synthetic.browser.event.failure.geo:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 },
                 {
                     "id": "B",
@@ -1537,7 +1568,8 @@
                     "limit": null,
                     "metricSelector": "builtin:synthetic.browser.event.success.geo:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1633,7 +1665,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:synthetic.browser.event.failure.geo:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names,(builtin:synthetic.browser.event.success.geo:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Visually complete (load action)",
@@ -1641,7 +1676,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 950,
+                "top": 1330,
                 "left": 1026,
                 "width": 342,
                 "height": 304
@@ -1674,7 +1709,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1748,7 +1784,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:synthetic.browser.event.visuallyComplete.load:splitBy(\"dt.entity.synthetic_test_step\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": " ",
@@ -1756,7 +1795,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 950,
+                "top": 1330,
                 "left": 1368,
                 "width": 646,
                 "height": 304
@@ -1789,7 +1828,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 },
                 {
                     "id": "B",
@@ -1813,7 +1853,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1909,7 +1950,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:synthetic.browser.event.visuallyComplete.xhr.geo:splitBy(\"dt.entity.synthetic_test_step\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names,(builtin:synthetic.browser.event.visuallyComplete.load.geo:splitBy(\"dt.entity.synthetic_test_step\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": " ",
@@ -1917,7 +1961,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 1330,
+                "top": 1710,
                 "left": 0,
                 "width": 266,
                 "height": 304
@@ -1939,7 +1983,8 @@
                     "limit": null,
                     "metricSelector": "builtin:synthetic.browser.errorCodes.geo:splitBy(\"dt.entity.synthetic_test\",\"By error code\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2013,7 +2058,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:synthetic.browser.errorCodes.geo:splitBy(\"dt.entity.synthetic_test\",\"By error code\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": " ",
@@ -2021,7 +2069,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 1330,
+                "top": 1710,
                 "left": 266,
                 "width": 722,
                 "height": 304
@@ -2043,7 +2091,8 @@
                     "limit": null,
                     "metricSelector": "builtin:synthetic.browser.errorCodes.geo:splitBy(\"dt.entity.synthetic_test\",\"By error code\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2127,7 +2176,298 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:synthetic.browser.errorCodes.geo:splitBy(\"dt.entity.synthetic_test\",\"By error code\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
+        },
+        {
+            "name": "Unavailability by geolocation",
+            "nameSize": null,
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 874,
+                "left": 1026,
+                "width": 494,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Unavailability by synthetic",
+            "nameSize": null,
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 874,
+                "left": 0,
+                "width": 494,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 912,
+                "left": 0,
+                "width": 988,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "----"
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 912,
+                "left": 1026,
+                "width": 988,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "----"
+        },
+        {
+            "name": "Unsuccessful rate",
+            "nameSize": null,
+            "tileType": "DATA_EXPLORER",
+            "configured": true,
+            "bounds": {
+                "top": 950,
+                "left": 1026,
+                "width": 988,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "customName": "Tests : Successful / Failed",
+            "queries": [
+                {
+                    "id": "A",
+                    "metric": null,
+                    "spaceAggregation": null,
+                    "timeAggregation": "DEFAULT",
+                    "splitBy": [
+                        "dt.entity.synthetic_test"
+                    ],
+                    "sortBy": null,
+                    "filterBy": null,
+                    "limit": null,
+                    "metricSelector": "(100 - builtin:synthetic.browser.availability.location.total):splitBy(\"dt.entity.synthetic_test\"):sort(value(auto,descending)):limit(20)",
+                    "foldTransformation": null,
+                    "enabled": true,
+                    "generatedMetricSelector": null
+                }
+            ],
+            "visualConfig": {
+                "type": "HEATMAP",
+                "global": {
+                    "theme": null,
+                    "threshold": null,
+                    "seriesType": null,
+                    "hasTrendline": null,
+                    "hideLegend": false
+                },
+                "rules": [
+                    {
+                        "matcher": "A:",
+                        "unitTransform": "auto",
+                        "valueFormat": "auto",
+                        "properties": {
+                            "color": "RED",
+                            "seriesType": "AREA",
+                            "alias": null
+                        },
+                        "seriesOverrides": []
+                    }
+                ],
+                "axes": {
+                    "xAxis": {
+                        "displayName": null,
+                        "visible": true
+                    },
+                    "yAxes": []
+                },
+                "heatmapSettings": {
+                    "yAxis": "DIMENSIONS",
+                    "yAxisBuckets": null,
+                    "xAxisBuckets": null
+                },
+                "singleValueSettings": null,
+                "thresholds": [
+                    {
+                        "axisTarget": "LEFT",
+                        "columnId": null,
+                        "rules": [
+                            {
+                                "value": null,
+                                "color": "#7dc540"
+                            },
+                            {
+                                "value": null,
+                                "color": "#f5d30f"
+                            },
+                            {
+                                "value": null,
+                                "color": "#dc172a"
+                            }
+                        ],
+                        "queryId": "",
+                        "visible": true
+                    }
+                ],
+                "tableSettings": {
+                    "isThresholdBackgroundAppliedToCell": false
+                },
+                "graphChartSettings": {
+                    "connectNulls": false
+                },
+                "honeycombSettings": {
+                    "showHive": true,
+                    "showLegend": true,
+                    "showLabels": false
+                }
+            },
+            "queriesSettings": {
+                "resolution": "",
+                "foldTransformation": null,
+                "foldAggregation": null
+            },
+            "metricExpressions": [
+                "resolution=null&((100 - builtin:synthetic.browser.availability.location.total):splitBy(\"dt.entity.synthetic_test\"):sort(value(auto,descending)):limit(20)):limit(100):names"
+            ]
+        },
+        {
+            "name": "Unsuccessful rate",
+            "nameSize": null,
+            "tileType": "DATA_EXPLORER",
+            "configured": true,
+            "bounds": {
+                "top": 950,
+                "left": 0,
+                "width": 988,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "customName": "Tests : Successful / Failed",
+            "queries": [
+                {
+                    "id": "A",
+                    "metric": null,
+                    "spaceAggregation": null,
+                    "timeAggregation": "DEFAULT",
+                    "splitBy": [],
+                    "sortBy": null,
+                    "filterBy": null,
+                    "limit": null,
+                    "metricSelector": "(100- builtin:synthetic.browser.availability.location.total:splitBy(\"dt.entity.synthetic_test\")):sort(value(auto,descending)):limit(20)",
+                    "foldTransformation": null,
+                    "enabled": true,
+                    "generatedMetricSelector": null
+                }
+            ],
+            "visualConfig": {
+                "type": "HEATMAP",
+                "global": {
+                    "theme": null,
+                    "threshold": null,
+                    "seriesType": null,
+                    "hasTrendline": null,
+                    "hideLegend": false
+                },
+                "rules": [
+                    {
+                        "matcher": "A:",
+                        "unitTransform": "auto",
+                        "valueFormat": "auto",
+                        "properties": {
+                            "color": "RED",
+                            "seriesType": "AREA",
+                            "alias": null
+                        },
+                        "seriesOverrides": []
+                    }
+                ],
+                "axes": {
+                    "xAxis": {
+                        "displayName": null,
+                        "visible": true
+                    },
+                    "yAxes": []
+                },
+                "heatmapSettings": {
+                    "yAxis": "DIMENSIONS",
+                    "yAxisBuckets": null,
+                    "xAxisBuckets": null
+                },
+                "singleValueSettings": null,
+                "thresholds": [
+                    {
+                        "axisTarget": "LEFT",
+                        "columnId": null,
+                        "rules": [
+                            {
+                                "value": null,
+                                "color": "#7dc540"
+                            },
+                            {
+                                "value": null,
+                                "color": "#f5d30f"
+                            },
+                            {
+                                "value": null,
+                                "color": "#dc172a"
+                            }
+                        ],
+                        "queryId": "",
+                        "visible": true
+                    }
+                ],
+                "tableSettings": {
+                    "isThresholdBackgroundAppliedToCell": false
+                },
+                "graphChartSettings": {
+                    "connectNulls": false
+                },
+                "honeycombSettings": {
+                    "showHive": true,
+                    "showLegend": true,
+                    "showLabels": false
+                }
+            },
+            "queriesSettings": {
+                "resolution": "",
+                "foldTransformation": null,
+                "foldAggregation": null
+            },
+            "metricExpressions": [
+                "resolution=null&((100 - builtin:synthetic.browser.availability.location.total:splitBy(\"dt.entity.synthetic_test\")):sort(value(auto,descending)):limit(20)):limit(100):names"
+            ]
         }
     ]
 }

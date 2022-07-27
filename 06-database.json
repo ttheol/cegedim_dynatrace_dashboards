@@ -579,7 +579,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.dbconnections.successRate:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -654,7 +655,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.dbconnections.successRate:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.dbconnections.successRate:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+            ]
         },
         {
             "name": "Total connections per minute",
@@ -684,7 +689,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.dbconnections.total:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -759,7 +765,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.dbconnections.total:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.dbconnections.total:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+            ]
         },
         {
             "name": "Number of calls to databases",
@@ -789,7 +799,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.dbChildCallCount:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -864,7 +875,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.dbChildCallCount:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.dbChildCallCount:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+            ]
         },
         {
             "name": "Time spent in database calls (Sum)",
@@ -894,7 +909,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.dbChildCallTime:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -969,7 +985,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.dbChildCallTime:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.dbChildCallTime:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+            ]
         },
         {
             "name": "Failure rate (any  errors)",
@@ -1027,7 +1047,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1102,7 +1123,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.errors.total.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.errors.total.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "Database",
@@ -1132,7 +1157,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1206,7 +1232,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Database",
@@ -1236,7 +1265,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1320,7 +1350,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Failure rate (any  errors)",
@@ -1378,7 +1411,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1452,7 +1486,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.errors.total.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Failure rate (any  errors)",
@@ -1510,7 +1547,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1594,7 +1632,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:service.errors.total.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Connection success rate",
@@ -1624,7 +1665,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.dbconnections.successRate:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1698,7 +1740,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.dbconnections.successRate:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Connection success rate",
@@ -1728,7 +1773,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.dbconnections.successRate:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1812,7 +1858,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:service.dbconnections.successRate:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Response time (90%tile)",
@@ -1870,7 +1919,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1963,7 +2013,11 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.response.time:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy():percentile(90):auto:sort(value(percentile(90),descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.response.time:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy():percentile(90):auto:sort(value(percentile(90),descending)):limit(10))"
+            ]
         },
         {
             "name": "Response time (90%tile)",
@@ -2021,7 +2075,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2109,7 +2164,10 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=null&(builtin:service.response.time:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):percentile(90):auto:sort(value(percentile(90),descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Response time (90%tile)",
@@ -2167,7 +2225,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2266,7 +2325,10 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.response.time:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"DATABASE_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):percentile(90):auto:sort(value(percentile(90),descending)):limit(10)):limit(100):names"
+            ]
         }
     ]
 }

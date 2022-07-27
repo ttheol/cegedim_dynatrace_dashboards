@@ -146,7 +146,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 874,
+                "top": 1292,
                 "left": 1026,
                 "width": 342,
                 "height": 38
@@ -229,7 +229,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 912,
+                "top": 1330,
                 "left": 1026,
                 "width": 988,
                 "height": 38
@@ -246,7 +246,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 1254,
+                "top": 1672,
                 "left": 0,
                 "width": 266,
                 "height": 38
@@ -262,7 +262,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 1292,
+                "top": 1710,
                 "left": 0,
                 "width": 988,
                 "height": 38
@@ -279,7 +279,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 874,
+                "top": 1292,
                 "left": 0,
                 "width": 304,
                 "height": 38
@@ -295,7 +295,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 912,
+                "top": 1330,
                 "left": 0,
                 "width": 988,
                 "height": 38
@@ -312,7 +312,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 1292,
+                "top": 1710,
                 "left": 1026,
                 "width": 988,
                 "height": 38
@@ -329,7 +329,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 1254,
+                "top": 1672,
                 "left": 1026,
                 "width": 266,
                 "height": 38
@@ -345,7 +345,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 1634,
+                "top": 2052,
                 "left": 0,
                 "width": 342,
                 "height": 38
@@ -361,7 +361,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 1672,
+                "top": 2090,
                 "left": 0,
                 "width": 988,
                 "height": 38
@@ -378,7 +378,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 1634,
+                "top": 2052,
                 "left": 1026,
                 "width": 342,
                 "height": 38
@@ -394,7 +394,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 1672,
+                "top": 2090,
                 "left": 1026,
                 "width": 988,
                 "height": 38
@@ -594,7 +594,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 2014,
+                "top": 2432,
                 "left": 0,
                 "width": 342,
                 "height": 38
@@ -610,7 +610,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 2014,
+                "top": 2432,
                 "left": 1026,
                 "width": 342,
                 "height": 38
@@ -626,7 +626,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 2394,
+                "top": 2812,
                 "left": 0,
                 "width": 342,
                 "height": 38
@@ -642,7 +642,7 @@
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
-                "top": 2394,
+                "top": 2812,
                 "left": 1026,
                 "width": 342,
                 "height": 38
@@ -658,7 +658,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 2052,
+                "top": 2470,
                 "left": 0,
                 "width": 988,
                 "height": 38
@@ -675,7 +675,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 2052,
+                "top": 2470,
                 "left": 1026,
                 "width": 988,
                 "height": 38
@@ -692,7 +692,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 2432,
+                "top": 2850,
                 "left": 0,
                 "width": 988,
                 "height": 38
@@ -709,7 +709,7 @@
             "tileType": "MARKDOWN",
             "configured": true,
             "bounds": {
-                "top": 2432,
+                "top": 2850,
                 "left": 1026,
                 "width": 988,
                 "height": 38
@@ -852,7 +852,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -927,7 +928,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.successes.server.rate:splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "Web services count",
@@ -985,7 +990,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1060,7 +1066,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")))):splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "Web requests count",
@@ -1118,7 +1128,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1193,7 +1204,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\")))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\")))):splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "HTTP 4xx errors",
@@ -1223,7 +1238,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.errors.fourxx.count:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1298,7 +1314,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.errors.fourxx.count:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.errors.fourxx.count:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+            ]
         },
         {
             "name": "HTTP 5xx errors",
@@ -1328,7 +1348,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.errors.fivexx.count:splitBy():value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1403,7 +1424,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.errors.fivexx.count:splitBy():value:auto:sort(value(sum,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.errors.fivexx.count:splitBy():value:auto:sort(value(sum,descending)):limit(10))"
+            ]
         },
         {
             "name": "Success rate % (the worst)",
@@ -1461,7 +1486,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1536,7 +1562,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.successes.server.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\")))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.successes.server.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\")))):splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "Success rate % (the worst)",
@@ -1594,7 +1624,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1669,7 +1700,11 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.successes.server.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\")))):splitBy():avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.successes.server.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\")))):splitBy():avg:auto:sort(value(avg,descending)):limit(10))"
+            ]
         },
         {
             "name": "Web request service",
@@ -1677,7 +1712,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 950,
+                "top": 1368,
                 "left": 0,
                 "width": 494,
                 "height": 304
@@ -1699,7 +1734,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1773,7 +1809,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Web service",
@@ -1781,7 +1820,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 950,
+                "top": 1368,
                 "left": 1026,
                 "width": 494,
                 "height": 304
@@ -1803,7 +1842,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1877,7 +1917,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.requestCount.total:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "4xx errors",
@@ -1885,7 +1928,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 1330,
+                "top": 1748,
                 "left": 0,
                 "width": 494,
                 "height": 304
@@ -1907,7 +1950,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.errors.fourxx.count:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -1981,7 +2025,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.errors.fourxx.count:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "4xx errors",
@@ -1989,7 +2036,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 1330,
+                "top": 1748,
                 "left": 494,
                 "width": 494,
                 "height": 304
@@ -2011,7 +2058,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.errors.fourxx.count:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2095,7 +2143,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:service.errors.fourxx.count:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "5xx errors",
@@ -2103,7 +2154,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 1330,
+                "top": 1748,
                 "left": 1026,
                 "width": 494,
                 "height": 304
@@ -2125,7 +2176,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.errors.fivexx.count:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2199,7 +2251,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.errors.fivexx.count:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "5xx errors",
@@ -2207,7 +2262,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 1330,
+                "top": 1748,
                 "left": 1520,
                 "width": 494,
                 "height": 304
@@ -2229,7 +2284,8 @@
                     "limit": null,
                     "metricSelector": "builtin:service.errors.fivexx.count:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2313,7 +2369,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:service.errors.fivexx.count:splitBy(\"dt.entity.service\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "JVM thread count",
@@ -2321,7 +2380,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 1710,
+                "top": 2128,
                 "left": 0,
                 "width": 342,
                 "height": 304
@@ -2354,7 +2413,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2428,7 +2488,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:tech.jvm.threads.count:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "JVM thread count",
@@ -2436,7 +2499,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 1710,
+                "top": 2128,
                 "left": 342,
                 "width": 646,
                 "height": 304
@@ -2469,7 +2532,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2553,7 +2617,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:tech.jvm.threads.count:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Garbage collection time",
@@ -2561,7 +2628,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 1710,
+                "top": 2128,
                 "left": 1026,
                 "width": 342,
                 "height": 304
@@ -2583,7 +2650,8 @@
                     "limit": null,
                     "metricSelector": "builtin:tech.jvm.memory.pool.collectionTime:splitBy(\"dt.entity.process_group_instance\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2657,7 +2725,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:tech.jvm.memory.pool.collectionTime:splitBy(\"dt.entity.process_group_instance\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Garbage collection time",
@@ -2665,7 +2736,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 1710,
+                "top": 2128,
                 "left": 1368,
                 "width": 646,
                 "height": 304
@@ -2687,7 +2758,8 @@
                     "limit": null,
                     "metricSelector": "builtin:tech.jvm.memory.pool.collectionTime:splitBy(\"dt.entity.process_group_instance\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2771,7 +2843,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:tech.jvm.memory.pool.collectionTime:splitBy(\"dt.entity.process_group_instance\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "JVM heap memory max bytes",
@@ -2779,7 +2854,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 2090,
+                "top": 2508,
                 "left": 0,
                 "width": 342,
                 "height": 304
@@ -2812,7 +2887,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -2886,7 +2962,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "JVM heap memory max bytes",
@@ -2894,7 +2973,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 2090,
+                "top": 2508,
                 "left": 342,
                 "width": 646,
                 "height": 304
@@ -2927,7 +3006,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -3011,7 +3091,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:tech.jvm.memory.pool.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "JVM heap memory pool used bytes",
@@ -3019,7 +3102,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 2090,
+                "top": 2508,
                 "left": 1026,
                 "width": 342,
                 "height": 304
@@ -3052,7 +3135,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -3126,7 +3210,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "JVM heap memory pool used bytes",
@@ -3134,7 +3221,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 2090,
+                "top": 2508,
                 "left": 1368,
                 "width": 646,
                 "height": 304
@@ -3167,7 +3254,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -3251,7 +3339,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:tech.jvm.memory.pool.used:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "JVM runtime max memory",
@@ -3259,7 +3350,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 2470,
+                "top": 2888,
                 "left": 0,
                 "width": 342,
                 "height": 304
@@ -3292,7 +3383,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -3366,7 +3458,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:tech.jvm.memory.runtime.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "JVM runtime max memory",
@@ -3374,7 +3469,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 2470,
+                "top": 2888,
                 "left": 342,
                 "width": 646,
                 "height": 304
@@ -3407,7 +3502,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -3491,7 +3587,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:tech.jvm.memory.runtime.max:splitBy(\"dt.entity.process_group_instance\"):avg:auto:sort(value(avg,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "JVM total CPU time",
@@ -3499,7 +3598,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 2470,
+                "top": 2888,
                 "left": 1026,
                 "width": 342,
                 "height": 304
@@ -3521,7 +3620,8 @@
                     "limit": null,
                     "metricSelector": "builtin:tech.jvm.threads.totalCpuTime:splitBy(\"dt.entity.process_group_instance\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -3595,7 +3695,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=Inf&(builtin:tech.jvm.threads.totalCpuTime:splitBy(\"dt.entity.process_group_instance\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "JVM total CPU time",
@@ -3603,7 +3706,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 2470,
+                "top": 2888,
                 "left": 1368,
                 "width": 646,
                 "height": 304
@@ -3625,7 +3728,8 @@
                     "limit": null,
                     "metricSelector": "builtin:tech.jvm.threads.totalCpuTime:splitBy(\"dt.entity.process_group_instance\"):value:auto:sort(value(sum,descending)):limit(10)",
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -3709,7 +3813,10 @@
                     "showLabels": false
                 }
             },
-            "queriesSettings": null
+            "queriesSettings": null,
+            "metricExpressions": [
+                "resolution=null&(builtin:tech.jvm.threads.totalCpuTime:splitBy(\"dt.entity.process_group_instance\"):value:auto:sort(value(sum,descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Success rate % (down top)",
@@ -3767,7 +3874,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -3866,7 +3974,10 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.successes.server.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Success rate % (down top)",
@@ -3924,7 +4035,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -4023,7 +4135,10 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.successes.server.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Success rate (time series)",
@@ -4081,7 +4196,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -4169,7 +4285,10 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=null&(builtin:service.successes.server.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Success rate (time series)",
@@ -4227,7 +4346,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -4315,7 +4435,10 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=null&(builtin:service.successes.server.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):avg:auto:sort(value(avg,ascending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Top response time (90%tile)",
@@ -4323,7 +4446,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 950,
+                "top": 1368,
                 "left": 494,
                 "width": 494,
                 "height": 304
@@ -4373,7 +4496,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -4472,7 +4596,10 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.response.time:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_REQUEST_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):percentile(90):auto:sort(value(percentile(90),descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Top response time (90%tile)",
@@ -4480,7 +4607,7 @@
             "tileType": "DATA_EXPLORER",
             "configured": true,
             "bounds": {
-                "top": 950,
+                "top": 1368,
                 "left": 1520,
                 "width": 494,
                 "height": 304
@@ -4530,7 +4657,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -4629,7 +4757,10 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
-            }
+            },
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.response.time:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),servicetype(~\"WEB_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):percentile(90):auto:sort(value(percentile(90),descending)):limit(10)):limit(100):names"
+            ]
         },
         {
             "name": "Response time (90%tile)",
@@ -4668,7 +4799,8 @@
                     "limit": null,
                     "metricSelector": null,
                     "foldTransformation": null,
-                    "enabled": true
+                    "enabled": true,
+                    "generatedMetricSelector": null
                 }
             ],
             "visualConfig": {
@@ -4761,7 +4893,353 @@
                 "resolution": "",
                 "foldTransformation": null,
                 "foldAggregation": null
+            },
+            "metricExpressions": [
+                "resolution=Inf&(builtin:service.response.time:splitBy():percentile(90):auto:sort(value(percentile(90),descending)):limit(10)):limit(100):names",
+                "resolution=null&(builtin:service.response.time:splitBy():percentile(90):auto:sort(value(percentile(90),descending)):limit(10))"
+            ]
+        },
+        {
+            "name": "Error rate (heatmap)",
+            "nameSize": null,
+            "tileType": "DATA_EXPLORER",
+            "configured": true,
+            "bounds": {
+                "top": 950,
+                "left": 0,
+                "width": 988,
+                "height": 342
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "customName": "Success rate (time series)",
+            "queries": [
+                {
+                    "id": "A",
+                    "metric": "builtin:service.errors.total.rate",
+                    "spaceAggregation": null,
+                    "timeAggregation": "DEFAULT",
+                    "splitBy": [
+                        "dt.entity.service"
+                    ],
+                    "sortBy": "DESC",
+                    "filterBy": {
+                        "filter": null,
+                        "globalEntity": null,
+                        "filterType": null,
+                        "filterOperator": "AND",
+                        "entityAttribute": null,
+                        "relationship": null,
+                        "nestedFilters": [
+                            {
+                                "filter": "dt.entity.service",
+                                "globalEntity": null,
+                                "filterType": "ENTITY_ATTRIBUTE",
+                                "filterOperator": "OR",
+                                "entityAttribute": "serviceType",
+                                "relationship": null,
+                                "nestedFilters": [],
+                                "criteria": [
+                                    {
+                                        "value": "WEB_REQUEST_SERVICE",
+                                        "evaluator": "IN",
+                                        "matchExactly": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "criteria": []
+                    },
+                    "limit": 20,
+                    "metricSelector": null,
+                    "foldTransformation": null,
+                    "enabled": true,
+                    "generatedMetricSelector": null
+                }
+            ],
+            "visualConfig": {
+                "type": "HEATMAP",
+                "global": {
+                    "theme": null,
+                    "threshold": null,
+                    "seriesType": null,
+                    "hasTrendline": null,
+                    "hideLegend": false
+                },
+                "rules": [
+                    {
+                        "matcher": "A:",
+                        "unitTransform": "auto",
+                        "valueFormat": "auto",
+                        "properties": {
+                            "color": "RED",
+                            "seriesType": "LINE",
+                            "alias": null
+                        },
+                        "seriesOverrides": []
+                    }
+                ],
+                "axes": {
+                    "xAxis": {
+                        "displayName": null,
+                        "visible": true
+                    },
+                    "yAxes": []
+                },
+                "heatmapSettings": {
+                    "yAxis": "DIMENSIONS",
+                    "yAxisBuckets": null,
+                    "xAxisBuckets": null
+                },
+                "singleValueSettings": null,
+                "thresholds": [
+                    {
+                        "axisTarget": "LEFT",
+                        "columnId": null,
+                        "rules": [
+                            {
+                                "value": null,
+                                "color": "#7dc540"
+                            },
+                            {
+                                "value": null,
+                                "color": "#f5d30f"
+                            },
+                            {
+                                "value": null,
+                                "color": "#dc172a"
+                            }
+                        ],
+                        "queryId": "",
+                        "visible": true
+                    }
+                ],
+                "tableSettings": {
+                    "isThresholdBackgroundAppliedToCell": false
+                },
+                "graphChartSettings": {
+                    "connectNulls": false
+                },
+                "honeycombSettings": {
+                    "showHive": true,
+                    "showLegend": true,
+                    "showLabels": false
+                }
+            },
+            "queriesSettings": {
+                "resolution": "",
+                "foldTransformation": null,
+                "foldAggregation": null
+            },
+            "metricExpressions": [
+                "resolution=null&(builtin:service.errors.total.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_REQUEST_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20)):limit(100):names"
+            ]
+        },
+        {
+            "name": "Error rate (Web Requests)",
+            "nameSize": null,
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 874,
+                "left": 0,
+                "width": 418,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
             }
+        },
+        {
+            "name": "Error rate (Web Services)",
+            "nameSize": null,
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 874,
+                "left": 1026,
+                "width": 418,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Error rate (heatmap)",
+            "nameSize": null,
+            "tileType": "DATA_EXPLORER",
+            "configured": true,
+            "bounds": {
+                "top": 950,
+                "left": 1026,
+                "width": 988,
+                "height": 342
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "customName": "Success rate (time series)",
+            "queries": [
+                {
+                    "id": "A",
+                    "metric": "builtin:service.errors.total.rate",
+                    "spaceAggregation": null,
+                    "timeAggregation": "DEFAULT",
+                    "splitBy": [
+                        "dt.entity.service"
+                    ],
+                    "sortBy": "DESC",
+                    "filterBy": {
+                        "filter": null,
+                        "globalEntity": null,
+                        "filterType": null,
+                        "filterOperator": "AND",
+                        "entityAttribute": null,
+                        "relationship": null,
+                        "nestedFilters": [
+                            {
+                                "filter": "dt.entity.service",
+                                "globalEntity": null,
+                                "filterType": "ENTITY_ATTRIBUTE",
+                                "filterOperator": "OR",
+                                "entityAttribute": "serviceType",
+                                "relationship": null,
+                                "nestedFilters": [],
+                                "criteria": [
+                                    {
+                                        "value": "WEB_SERVICE",
+                                        "evaluator": "IN",
+                                        "matchExactly": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "criteria": []
+                    },
+                    "limit": 20,
+                    "metricSelector": null,
+                    "foldTransformation": null,
+                    "enabled": true,
+                    "generatedMetricSelector": null
+                }
+            ],
+            "visualConfig": {
+                "type": "HEATMAP",
+                "global": {
+                    "theme": null,
+                    "threshold": null,
+                    "seriesType": null,
+                    "hasTrendline": null,
+                    "hideLegend": false
+                },
+                "rules": [
+                    {
+                        "matcher": "A:",
+                        "unitTransform": "auto",
+                        "valueFormat": "auto",
+                        "properties": {
+                            "color": "RED",
+                            "seriesType": "LINE",
+                            "alias": null
+                        },
+                        "seriesOverrides": []
+                    }
+                ],
+                "axes": {
+                    "xAxis": {
+                        "displayName": null,
+                        "visible": true
+                    },
+                    "yAxes": []
+                },
+                "heatmapSettings": {
+                    "yAxis": "DIMENSIONS",
+                    "yAxisBuckets": null,
+                    "xAxisBuckets": null
+                },
+                "singleValueSettings": null,
+                "thresholds": [
+                    {
+                        "axisTarget": "LEFT",
+                        "columnId": null,
+                        "rules": [
+                            {
+                                "value": null,
+                                "color": "#7dc540"
+                            },
+                            {
+                                "value": null,
+                                "color": "#f5d30f"
+                            },
+                            {
+                                "value": null,
+                                "color": "#dc172a"
+                            }
+                        ],
+                        "queryId": "",
+                        "visible": true
+                    }
+                ],
+                "tableSettings": {
+                    "isThresholdBackgroundAppliedToCell": false
+                },
+                "graphChartSettings": {
+                    "connectNulls": false
+                },
+                "honeycombSettings": {
+                    "showHive": true,
+                    "showLegend": true,
+                    "showLabels": false
+                }
+            },
+            "queriesSettings": {
+                "resolution": "",
+                "foldTransformation": null,
+                "foldAggregation": null
+            },
+            "metricExpressions": [
+                "resolution=null&(builtin:service.errors.total.rate:filter(and(in(\"dt.entity.service\",entitySelector(\"type(service),serviceType(~\"WEB_SERVICE~\")\")))):splitBy(\"dt.entity.service\"):sort(value(auto,descending)):limit(20)):limit(100):names"
+            ]
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 912,
+                "left": 1026,
+                "width": 988,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "- - - "
+        },
+        {
+            "name": "Markdown",
+            "nameSize": null,
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 912,
+                "left": 0,
+                "width": 988,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "- - - "
         }
     ]
 }
