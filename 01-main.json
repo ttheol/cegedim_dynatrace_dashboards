@@ -15,8 +15,8 @@
             "managementZone": null
         },
         "tags": [
-            "Cegedim Corp - BU",
-            "Cegedim Corp"
+            "[cgdm]Cegedim Corp - BU",
+            "[cgdm]Cegedim Corp"
         ],
         "preset": true,
         "tilesNameSize": "small"
