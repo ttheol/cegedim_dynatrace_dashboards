@@ -8,8 +8,9 @@
     "id": "6a36b400-6b61-4e0a-81fc-caa0cbafc27b",
     "dashboardMetadata": {
         "name": "1000 🛖 [${application}.${environment}] Home",
-        "shared": false,
+        "shared": true,
         "owner": "Cegedim Corp",
+        "preset": true,
         "dashboardFilter": null,
         "tags": [
             "[cgdm]Cegedim Corp"
