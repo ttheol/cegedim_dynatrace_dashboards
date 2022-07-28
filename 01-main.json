@@ -249,7 +249,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "#### [🛖 ${mz.name}](#dashboard;gtf=-2h;gf=${mz.id};id=6a36b400-6b61-4e0a-81fc-caa0cbafc27b)"
+            "markdown": "#### [🛖 ${mz.name}](#dashboard;gtf=-2h;gf=${mz.id};id=${dash.id})"
         },
         {
             "name": "Problems",
