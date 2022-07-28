@@ -144,7 +144,7 @@
             "height": 76
           },
           "tileFilter": {},
-          "markdown": "___\n## 🔍 [Infrastructure & cloud](#dashboard;id=bd8331180-fa8a-4e7b-b875-13071e671fe8)\n____\n\n"
+          "markdown": "___\n## 🔍 [Infrastructure & cloud](#dashboard;id=d8331180-fa8a-4e7b-b875-13071e671fe8)\n____\n\n"
         },
         {
           "name": "Database health",
@@ -1055,6 +1055,19 @@
           "metricExpressions": [
             "resolution=Inf&(builtin:host.cpu.usage:splitBy(\"dt.entity.host\"):sort(value(auto,ascending)):limit(10)):limit(100):names"
           ]
+        },
+        {
+          "name": "Markdown",
+          "tileType": "MARKDOWN",
+          "configured": true,
+          "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 380,
+            "height": 38
+          },
+          "tileFilter": {},
+          "markdown": "### 🧭 [Main Environment Overview](#dashboard;gtf=-2h;gf=all;id=3ff913de-7c52-4f72-8932-3764ddab0f0a)"
         }
       ]
 }
