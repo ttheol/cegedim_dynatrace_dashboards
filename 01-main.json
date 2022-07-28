@@ -23,7 +23,7 @@
     },
     "tiles": [
         {
-            "name": "Problems",
+            "name": "!mz",
             "nameSize": null,
             "tileType": "OPEN_PROBLEMS",
             "configured": true,
@@ -44,7 +44,7 @@
             "entitySelector": null
         },
         {
-            "name": "Services",
+            "name": "!mz",
             "nameSize": null,
             "tileType": "SERVICES",
             "configured": true,
@@ -235,7 +235,7 @@
             "markdown": "#### [🏠 App. Overview](#dashboard;gtf=-2h;gf=${mz.id};id=05389282-82fc-428c-9ec2-971cbec0d474)"
         },
         {
-            "name": "Application homepage",
+            "name": "!mz",
             "nameSize": null,
             "tileType": "MARKDOWN",
             "configured": true,
