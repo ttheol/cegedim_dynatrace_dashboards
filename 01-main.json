@@ -44,27 +44,6 @@
             "entitySelector": null
         },
         {
-            "name": "Services",
-            "nameSize": null,
-            "tileType": "SERVICES",
-            "configured": true,
-            "bounds": {
-                "top": 38,
-                "left": 456,
-                "width": 228,
-                "height": 152
-            },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": {
-                    "id": "${mz.id}",
-                    "name": "${mz.name}"
-                }
-            },
-            "filterConfig": null,
-            "chartVisible": true
-        },
-        {
             "name": "Live user activity",
             "nameSize": null,
             "tileType": "UEM_ACTIVE_SESSIONS",
@@ -234,23 +213,7 @@
             },
             "markdown": "#### [🏠 App. Overview](#dashboard;gtf=-2h;gf=${mz.id};id=05389282-82fc-428c-9ec2-971cbec0d474)"
         },
-        {
-            "name": "Application homepage",
-            "nameSize": null,
-            "tileType": "MARKDOWN",
-            "configured": true,
-            "bounds": {
-                "top": 0,
-                "left": 456,
-                "width": 228,
-                "height": 38
-            },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
-            "markdown": "#### [🛖 ${mz.name}](#dashboard;gtf=-2h;gf=${mz.id};id=6a36b400-6b61-4e0a-81fc-caa0cbafc27b)"
-        },
+        
         {
             "name": "Problems",
             "nameSize": null,
