@@ -36,8 +36,8 @@
             "tileFilter": {
                 "timeframe": null,
                 "managementZone": {
-                    "id": "${mz.id}",
-                    "name": "${mz.name}"
+                    "id": "${mz-1.id}",
+                    "name": "${mz-1.name}"
                 }
             },
             "problemSelector": null,
@@ -57,8 +57,8 @@
             "tileFilter": {
                 "timeframe": null,
                 "managementZone": {
-                    "id": "${mz.id}",
-                    "name": "${mz.name}"
+                    "id": "${mz-1.id}",
+                    "name": "${mz-1.name}"
                 }
             },
             "filterConfig": null,
@@ -232,7 +232,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "#### [🏠 App. Overview](#dashboard;gtf=-2h;gf=${mz.id};id=05389282-82fc-428c-9ec2-971cbec0d474)"
+            "markdown": "#### [🏠 App. Overview](#dashboard;gtf=-2h;gf=${mz-1.id};id=05389282-82fc-428c-9ec2-971cbec0d474)"
         },
         {
             "name": "!mz",
@@ -249,7 +249,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "#### [🛖 ${mz.name}](#dashboard;gtf=-2h;gf=${mz.id};id=6a36b400-6b61-4e0a-81fc-caa0cbafc27b)"
+            "markdown": "#### [🛖 ${mz.name}](#dashboard;gtf=-2h;gf=${mz-1.id};id=6a36b400-6b61-4e0a-81fc-caa0cbafc27b)"
         },
         {
             "name": "Problems",
