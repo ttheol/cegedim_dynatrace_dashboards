@@ -50,7 +50,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "## 🔍 Digital experience\n***\n\n- ✅ web applications\n- [mobile apps](#dashboard;id=4df088d5-011e-4ca0-8aa5-de085888ffbe)\n- [synthetic (browser)](#dashboard;id=cdd398de-e026-48ab-8ad4-431839ab2991) \n- [visits↗](#usersearchoverview) \n- [frustrated visits↗](#usersearchoverview;filtrfilterUXScore=1) "
+            "markdown": "## 🔍 Digital experience\n***\n\n- ✅ web applications\n- [mobile apps](#dashboard;id=4df088d5-011e-4ca0-8aa5-de085888ffbe)\n- [synthetic (browser)](#dashboard;id=cdd398de-e026-48ab-8ad4-431839ab2991) \n- [visits↗](/ui/user-sessions) \n- [frustrated visits↗](/ui/user-sessions?filtrfilterUXScore=1) "
         },
         {
             "name": "Markdown",
