@@ -67,7 +67,7 @@
                     "sortBy": null,
                     "filterBy": null,
                     "limit": null,
-                    "metricSelector": "builtin:billing.synthetic.requests:splitBy():sum + builtin:billing.apps.web.sessionsWithoutReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto * 0.25 + builtin:billing.apps.web.sessionsWithReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto + builtin:billing.synthetic.requests:splitBy():sum:auto",
+                    "metricSelector": "builtin:billing.synthetic.requests:splitBy():sum:default(0) + builtin:billing.apps.web.sessionsWithoutReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto:default(0) * 0.25 + builtin:billing.apps.web.sessionsWithReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto:default(0) + builtin:billing.synthetic.actions:splitBy():sum:auto:default(0)",
                     "foldTransformation": null,
                     "enabled": true
                 }
@@ -383,7 +383,7 @@
                     "sortBy": null,
                     "filterBy": null,
                     "limit": null,
-                    "metricSelector": "(builtin:billing.synthetic.requests:splitBy():sum + builtin:billing.apps.web.sessionsWithoutReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto * 0.25 + builtin:billing.apps.web.sessionsWithReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto + builtin:billing.synthetic.requests:splitBy():sum:auto)*6",
+                    "metricSelector": "(builtin:billing.synthetic.requests:splitBy():sum:default(0) + builtin:billing.apps.web.sessionsWithoutReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto:default(0) * 0.25 + builtin:billing.apps.web.sessionsWithReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto:default(0) + builtin:billing.synthetic.actions:splitBy():sum:auto:default(0))*6",
                     "foldTransformation": null,
                     "enabled": true
                 }
@@ -506,7 +506,7 @@
                     "sortBy": null,
                     "filterBy": null,
                     "limit": null,
-                    "metricSelector": "(builtin:billing.synthetic.requests:splitBy():sum + builtin:billing.apps.web.sessionsWithoutReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto * 0.25 + builtin:billing.apps.web.sessionsWithReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto + builtin:billing.synthetic.requests:splitBy():sum:auto)*12",
+                    "metricSelector": "(builtin:billing.synthetic.requests:splitBy():sum:default(0) + builtin:billing.apps.web.sessionsWithoutReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto:default(0) * 0.25 + builtin:billing.apps.web.sessionsWithReplayByApplication:filter(and(eq(Type,Billed))):splitBy():sum:auto:default(0) + builtin:billing.synthetic.actions:splitBy():sum:auto:default(0))*12",
                     "foldTransformation": null,
                     "enabled": true
                 }
@@ -629,7 +629,7 @@
                     "sortBy": null,
                     "filterBy": null,
                     "limit": null,
-                    "metricSelector": "builtin:billing.ddu.metrics.total:splitBy():sum:auto + builtin:billing.ddu.log.total:splitBy():sum:auto + builtin:billing.ddu.events.total:splitBy():sum:auto + builtin:billing.ddu.traces.total:splitBy():sum:auto + builtin:billing.ddu.serverless.total:splitBy():sum:auto",
+                    "metricSelector": "builtin:billing.ddu.metrics.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.log.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.events.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.traces.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.serverless.total:splitBy():sum:auto:default(0)",
                     "foldTransformation": null,
                     "enabled": true
                 }
@@ -1002,7 +1002,7 @@
                     "sortBy": null,
                     "filterBy": null,
                     "limit": null,
-                    "metricSelector": "(builtin:billing.ddu.metrics.total:splitBy():sum:auto + builtin:billing.ddu.log.total:splitBy():sum:auto + builtin:billing.ddu.events.total:splitBy():sum:auto + builtin:billing.ddu.traces.total:splitBy():sum:auto + builtin:billing.ddu.serverless.total:splitBy():sum:auto)*6",
+                    "metricSelector": "(builtin:billing.ddu.metrics.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.log.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.events.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.traces.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.serverless.total:splitBy():sum:auto:default(0))*6",
                     "foldTransformation": null,
                     "enabled": true
                 }
@@ -1112,7 +1112,7 @@
                     "sortBy": null,
                     "filterBy": null,
                     "limit": null,
-                    "metricSelector": "(builtin:billing.ddu.metrics.total:splitBy():sum:auto + builtin:billing.ddu.log.total:splitBy():sum:auto + builtin:billing.ddu.events.total:splitBy():sum:auto + builtin:billing.ddu.traces.total:splitBy():sum:auto + builtin:billing.ddu.serverless.total:splitBy():sum:auto)*12",
+                    "metricSelector": "(builtin:billing.ddu.metrics.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.log.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.events.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.traces.total:splitBy():sum:auto:default(0) + builtin:billing.ddu.serverless.total:splitBy():sum:auto:default(0))*12",
                     "foldTransformation": null,
                     "enabled": true
                 }
