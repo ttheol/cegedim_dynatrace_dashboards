@@ -73,7 +73,7 @@
             "height": 190
           },
           "tileFilter": {},
-          "markdown": "## 🔍 [Infrastructure & cloud](#dashboard;id=d8331180-fa8a-4e7b-b875-13071e671fe8)\n***\n- [infrastructure](#dashboard;id=d8331180-fa8a-4e7b-b875-13071e671fe8)\n- ✅ [kubernetes](#dashboard;id=f72f7fd1-600b-4953-b3ce-f2e0038015a7)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n"
+          "markdown": "## 🔍 [Infrastructure & cloud](#dashboard;id=d8331180-fa8a-4e7b-b875-13071e671fe8)\n***\n- [infrastructure](#dashboard;id=d8331180-fa8a-4e7b-b875-13071e671fe8)\n- ✅ [kubernetes](#dashboard;id=1f98947e-7f60-4e49-897c-bd0437602a2f)\n- [metrics (hosts)↗](/ui/metrics?filters=text%3Dhost)\n- [techno↗](#newprocessessummary)\n"
         },
         {
           "name": "Markdown",
