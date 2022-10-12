@@ -7,12 +7,13 @@
     },
     "id": "b44be30b-bbac-4a41-bc28-dbdf0f1957a5",
     "dashboardMetadata": {
-        "name": "03 ✔ User experience (web applications)",
+        "name": "- 03 ✔ User experience (web applications)",
         "shared": true,
         "owner": "Cegedim Corp",
         "dashboardFilter": null,
         "tags": [
-            "[cgdm]Cegedim Corp"
+            "[cgdm]Cegedim Corp",
+            "v3.0.0"
         ],
         "preset": true,
         "tilesNameSize": null

@@ -7,12 +7,14 @@
     },
     "id": "57b53325-c946-41e4-889b-b342f3cb6d41",
     "dashboardMetadata": {
-        "name": "9999 🛖 [unmonitored] Home",
+        "name": "- 999 [unmonitored] 🛖 Home",
         "shared": true,
         "owner": "Cegedim Corp",
         "dashboardFilter": null,
         "tags": [
-            "[cgdm]Cegedim Corp"
+            "[cgdm]Cegedim Corp",
+            "unmonitored",
+            "v3.0.0"
         ],
         "preset": true,
         "tilesNameSize": null

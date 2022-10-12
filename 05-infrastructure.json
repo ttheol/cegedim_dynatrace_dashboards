@@ -7,12 +7,13 @@
     },
     "id": "d8331180-fa8a-4e7b-b875-13071e671fe8",
     "dashboardMetadata": {
-        "name": "05 ✔ Infrastructure",
+        "name": "- 05 ✔ Infrastructure",
         "shared": true,
         "owner": "Cegedim Corp",
         "dashboardFilter": null,
         "tags": [
-            "[cgdm]Cegedim Corp"
+            "[cgdm]Cegedim Corp",
+            "v3.0.0"
         ],
         "preset": true,
         "tilesNameSize": null

@@ -7,12 +7,13 @@
     },
     "id": "05389282-82fc-428c-9ec2-971cbec0d474",
     "dashboardMetadata": {
-        "name": "02 🏠 Application Overview",
+        "name": "- 02 🏠 Application Overview",
         "shared": true,
         "owner": "Cegedim Corp",
         "dashboardFilter": null,
         "tags": [
-            "[cgdm]Cegedim Corp"
+            "[cgdm]Cegedim Corp",
+            "v3.0.0"
         ],
         "preset": true,
         "tilesNameSize": null

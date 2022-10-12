@@ -7,12 +7,13 @@
     },
     "id": "aa4e2a21-cc24-4f41-b190-31c174b3e795",
     "dashboardMetadata": {
-        "name": "00📝 Dashboard Documentation",
+        "name": "- 00📝 Dashboard Documentation",
         "shared": true,
         "owner": "Cegedim Corp",
         "dashboardFilter": null,
         "tags": [
-            "[cgdm]Cegedim Corp"
+            "[cgdm]Cegedim Corp",
+            "v3.0.0"
         ],
         "preset": true,
         "tilesNameSize": null

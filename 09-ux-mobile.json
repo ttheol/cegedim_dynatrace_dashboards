@@ -7,12 +7,13 @@
     },
     "id": "4df088d5-011e-4ca0-8aa5-de085888ffbe",
     "dashboardMetadata": {
-        "name": "09 ✔ User experience (mobile apps)",
+        "name": "- 09 ✔ User experience (mobile apps)",
         "shared": true,
         "owner": "Cegedim Corp",
         "dashboardFilter": null,
         "tags": [
-            "[cgdm]Cegedim Corp"
+            "[cgdm]Cegedim Corp",
+            "v3.0.0"
         ],
         "preset": true,
         "tilesNameSize": null

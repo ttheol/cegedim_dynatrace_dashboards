@@ -7,7 +7,7 @@
     },
     "id": "3ff913de-7c52-4f72-8932-3764ddab0f0a",
     "dashboardMetadata": {
-        "name": "01 🧭 Main Environment Overview",
+        "name": "- 01 🧭 Main Environment Overview",
         "shared": true,
         "owner": "Cegedim Corp - BU",
         "dashboardFilter": {
@@ -16,7 +16,8 @@
         },
         "tags": [
             "[cgdm]Cegedim Corp - BU",
-            "[cgdm]Cegedim Corp"
+            "[cgdm]Cegedim Corp",
+            "v3.0.0"
         ],
         "preset": true,
         "tilesNameSize": "small"

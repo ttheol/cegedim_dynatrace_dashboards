@@ -7,12 +7,13 @@
     },
     "id": "0b51bc99-5d02-4e7d-9975-a5acbf9df5ad",
     "dashboardMetadata": {
-        "name": "08 ✔ Synthetic (service)",
+        "name": "- 08 ✔ Synthetic (service)",
         "shared": true,
         "owner": "Cegedim Corp",
         "dashboardFilter": null,
         "tags": [
-            "[cgdm]Cegedim Corp"
+            "[cgdm]Cegedim Corp",
+            "v3.0.0"
         ],
         "preset": true,
         "tilesNameSize": null

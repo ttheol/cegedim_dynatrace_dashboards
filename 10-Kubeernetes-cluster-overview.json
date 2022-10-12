@@ -7,11 +7,12 @@
     },
     "id": "1f98947e-7f60-4e49-897c-bd0437602a2f",
     "dashboardMetadata": {
-      "name": "10 ✔ Kubernetes cluster overview",
+      "name": "- 10 ✔ Kubernetes cluster overview",
       "shared": true,
       "owner": "Cegedim Corp",
       "tags": [
-        "Kubernetes"
+        "Kubernetes",
+        "v3.0.0"
       ],
       "preset": true,
       "popularity": 1,

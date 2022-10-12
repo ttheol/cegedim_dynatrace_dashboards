@@ -7,7 +7,7 @@
     },
     "id": "7e591a09-72c6-4518-9e3d-c68f7de7e1d0",
     "dashboardMetadata": {
-        "name": "100 DEM/DDU Forecast",
+        "name": "- 100 DEM/DDU Forecast",
         "shared": true,
         "owner": "Dynatrace",
         "dashboardFilter": {
@@ -19,7 +19,8 @@
         },
         "tags": [
             "[cgdm]Cegedim Corp",
-            "Licensing"
+            "Licensing",
+            "v3.0.0"
         ],
         "preset": true,
         "tilesNameSize": null
