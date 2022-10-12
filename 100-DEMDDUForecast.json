@@ -18,9 +18,8 @@
             }
         },
         "tags": [
-            "[cgdm]Cegedim Corp",
-            "Licensing",
-            "v3.0.0"
+            "[cgdm]Cegedim Corp (v3.0)",
+            "Licensing"
         ],
         "preset": true,
         "tilesNameSize": null
