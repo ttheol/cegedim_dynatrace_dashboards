@@ -51,7 +51,7 @@
                 "timeframe": null,
                 "managementZone": null
             },
-            "markdown": "## Information\n---\n\n\n### 📄 Documentations\n\nUnmonirored section provide and group 2 types of Dynatrace service components:\n1. Requests to public networks\n2. Requests to unmonitored hosts"
+            "markdown": "## Information\n---\n\n\n### 📄 Documentations\n\nUnmonitored section provide and group 2 types of Dynatrace service components:\n1. Requests to public networks\n2. Requests to unmonitored hosts"
         }
     ]
 }
